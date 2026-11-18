@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f8eee9">
+<title>For Lakshita — Happy Princess Day</title>
+<style>
+:root{--cream:#fbf5ef;--rose:#ead0ca;--blush:#d9aaa5;--wine:#754b50;--gold:#b58b54;--ink:#47383a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#b58b54 .65px,transparent .65px);background-size:13px 13px;z-index:0}
+main,header,footer{position:relative;z-index:1}.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.hero{min-height:100svh;display:grid;place-items:center;text-align:center;padding:36px 20px;position:relative;overflow:hidden;background:linear-gradient(135deg,#f7e9e4 0%,#fbf5ef 50%,#f0e2d2 100%)}
+.hero:before,.hero:after{content:"✿";position:absolute;color:#c69b83;opacity:.35;font-size:clamp(100px,22vw,250px);font-weight:normal}
+.hero:before{top:4%;left:3%;transform:rotate(-20deg)}.hero:after{right:4%;bottom:2%;transform:rotate(20deg)}
+.hero-inner{max-width:760px;position:relative;z-index:1}.eyebrow{font:11px Arial,sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.crown{font-size:35px;margin:22px 0 10px;filter:drop-shadow(0 4px 8px #b58b5444)}
+h1{font-size:clamp(58px,11vw,112px);font-weight:normal;line-height:.92;letter-spacing:-.055em;color:var(--wine);margin:12px 0}
+.hero-sub{font-size:clamp(17px,3vw,23px);font-style:italic;color:#80686a;margin:22px auto 30px;line-height:1.6}
+.rule{width:75px;height:1px;background:var(--gold);margin:25px auto}
+.btn{border:1px solid var(--gold);background:var(--wine);color:#fff8f0;padding:15px 25px;border-radius:99px;font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:.25s}
+.btn:hover{background:#93696b;transform:translateY(-2px);box-shadow:0 10px 24px #754b5022}
+.scroll{position:absolute;bottom:22px;left:0;right:0;font:10px Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#9c7c70}
+section{padding:90px 20px;max-width:1120px;margin:auto}.section-kicker{text-align:center;color:var(--gold);font:10px Arial,sans-serif;letter-spacing:.3em;text-transform:uppercase}
+h2{text-align:center;font-size:clamp(35px,6vw,58px);font-weight:normal;color:var(--wine);margin:14px 0 18px;letter-spacing:-.035em}
+.intro{text-align:center;max-width:640px;margin:0 auto;color:#826f6d;font-size:17px;line-height:1.8}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:46px;align-items:start}
+.photo{margin:0;background:#fffaf5;padding:10px 10px 16px;box-shadow:0 12px 35px #61453c14;transform:rotate(var(--tilt));transition:transform .35s,box-shadow .35s}
+.photo:hover{transform:rotate(0) translateY(-7px);box-shadow:0 20px 40px #61453c22}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:3/4;filter:saturate(.94)}
+.photo figcaption{text-align:center;font-size:15px;font-style:italic;color:#896b68;padding:13px 3px 0}
+.p1{grid-column:1/5;--tilt:-2deg;margin-top:30px}.p2{grid-column:5/9;--tilt:1.5deg}.p3{grid-column:9/13;--tilt:-1deg;margin-top:48px}
+.p4{grid-column:2/6;--tilt:1.2deg;margin-top:20px}.p5{grid-column:6/10;--tilt:-1.5deg;margin-top:0}.p6{display:none}
+.letter-wrap{background:#f1e3dc;padding:75px 20px;margin-top:30px}
+.letter{max-width:720px;margin:auto;background:#fffaf5;padding:clamp(28px,6vw,64px);box-shadow:0 18px 50px #694b4218;border:1px solid #ead8ca;position:relative}
+.letter:before{content:"";position:absolute;inset:10px;border:1px solid #e6d2c0;pointer-events:none}
+.letter h2{font-size:clamp(34px,6vw,48px);margin-top:5px}
+.letter p{font-size:18px;line-height:1.95;color:#715d5d;position:relative}
+.salutation{font-style:italic;color:var(--wine)!important;font-size:22px!important}
+.signature{text-align:right;font-style:italic;color:var(--wine)!important;font-size:23px!important;margin-top:30px}
+.hidden-letter{display:none}.hidden-letter.show{display:block;animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.reveal{text-align:center;margin-top:25px}
+.final{padding:100px 20px;text-align:center;background:linear-gradient(145deg,#f5e6df,#fbf5ef 55%,#ead9cb)}
+.final .big{font-size:clamp(37px,7vw,68px);line-height:1.12;color:var(--wine);max-width:850px;margin:20px auto}
+.final p{font-size:17px;color:#826b68;line-height:1.8}
+footer{text-align:center;padding:25px 15px 35px;color:#a18a7c;font:10px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase}
+.petal{position:fixed;top:-30px;z-index:5;pointer-events:none;animation:fall linear forwards;color:#c98e91}
+@keyframes fall{to{transform:translateY(110vh) rotate(420deg);opacity:0}}
+@media(max-width:700px){section{padding:68px 18px}.gallery{gap:12px}.p1{grid-column:1/7;margin-top:10px}.p2{grid-column:7/13;margin-top:38px}.p3{grid-column:2/8;margin-top:8px}.p4{grid-column:8/13;margin-top:35px}.p5{grid-column:3/10;margin-top:6px}.photo{padding:7px 7px 12px}.photo figcaption{font-size:13px}.letter-wrap{padding:55px 15px}.letter p{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+ <div class="hero-inner">
+  <div class="eyebrow">A little something, made just for you</div>
+  <div class="crown">♕</div>
+  <h1>Dear<br><i>Lakshita</i></h1>
+  <div class="rule"></div>
+  <p class="hero-sub">Some people make the world feel a little softer,<br>a little brighter, and a lot more beautiful.</p>
+  <button class="btn" onclick="document.getElementById('moments').scrollIntoView({behavior:'smooth'})">Enter your fairytale&nbsp; ✧</button>
+ </div>
+ <div class="scroll">A celebration of you · scroll to wander</div>
+</header>
+
+<main>
+<section id="moments">
+ <div class="section-kicker">The prettiest little collection</div>
+ <h2>A princess in every kind of light</h2>
+ <p class="intro">A little festive sparkle, a little midnight magic, a little sunshine — and so many lovely versions of you. These moments deserve their own tiny gallery.</p>
+ <div class="gallery">
+  <figure class="photo p1"><img src="photos/traditional-glow.jpeg" alt="Lakshita in a festive traditional outfit"><figcaption>Festive glow ✨</figcaption></figure>
+  <figure class="photo p2"><img src="photos/midnight-elegance.jpeg" alt="Lakshita in a black evening outfit"><figcaption>Midnight elegance</figcaption></figure>
+  <figure class="photo p3"><img src="photos/soft-silhouette.jpeg" alt="Lakshita in a graceful white outfit"><figcaption>Soft as a daydream</figcaption></figure>
+  <figure class="photo p4"><img src="photos/sunlit-grace.jpeg" alt="Lakshita in a white outfit in the sunlight"><figcaption>Sunlit and lovely</figcaption></figure>
+  <figure class="photo p5"><img src="photos/sunflower-smile.jpeg" alt="Lakshita holding a sunflower bouquet"><figcaption>A little sunshine, holding sunshine</figcaption></figure>
+ </div>
+</section>
+
+<div class="letter-wrap">
+ <div class="letter">
+  <div class="section-kicker">A note from the heart</div>
+  <h2>For my favourite princess</h2>
+  <p class="salutation">Dear Lakshita,</p>
+  <p>Happy Princess Day to the girl who makes elegance look effortless and turns ordinary moments into something worth remembering.</p>
+  <p>Whether you're dressed up in all your festive glory, looking effortlessly classy, or simply being your lovely self, there's something about you that catches the light. And honestly, you don't need a crown to make a room feel a little more magical.</p>
+  <p>I hope you never forget how special you are. May life bring you the kind of happiness that feels like sunshine, the kind of love that feels like home, and a thousand little reasons to smile that beautiful smile.</p>
+  <p>Keep being wonderfully, unapologetically you. The world is lucky to have your kind of magic in it.</p>
+  <p class="signature">With lots of love, ♡</p>
+  <div class="reveal"><button class="btn" id="surpriseBtn" onclick="revealSurprise()">One more little thing…</button></div>
+  <div class="hidden-letter" id="surprise">
+   <div class="rule"></div>
+   <p style="text-align:center;font-size:22px;font-style:italic;color:#754b50">If this were a fairytale, I'd still choose the chapters where you're simply being you. ♡</p>
+  </div>
+ </div>
+</div>
+
+<div class="final">
+ <div class="crown">✧ ♕ ✧</div>
+ <div class="section-kicker">And always remember</div>
+ <div class="big">You don't need a fairytale to be a princess. You make your own magic.</div>
+ <p>Happy Princess Day, Lakshita. Keep sparkling, always. ♡</p>
+</div>
+</main>
+<footer>Made with affection · Especially for Lakshita · 18 November 2026</footer>
+<script>
+function revealSurprise(){
+ const el=document.getElementById('surprise');
+ el.classList.add('show');
+ document.getElementById('surpriseBtn').textContent='A little magic, just for you ♡';
+ document.getElementById('surpriseBtn').disabled=true;
+}
+const symbols=['✧','♡','✿'];
+function petal(){
+ const p=document.createElement('span');p.className='petal';p.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+ p.style.left=Math.random()*100+'vw';p.style.fontSize=(12+Math.random()*13)+'px';p.style.opacity=.35+Math.random()*.45;
+ p.style.animationDuration=(7+Math.random()*7)+'s';document.body.appendChild(p);setTimeout(()=>p.remove(),15000);
+}
+setInterval(petal,1200);
+</script>
+</body>
+</html>
